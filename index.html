@@ -1,520 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/all.min.css" />
-
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Navbar start -->
-    <nav class="navbar navbar-expand-md bg-danger navbar-dark sticky-top">
-      <div class="container">
-        <a href="#" class="navbar-brand">Site Logo</a>
-
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target=".collapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                href=""
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                >Services</a
-              >
-              <ul
-                class="dropdown-menu dropdown-menu-end bg-danger dropdown-menu-dark">
-                <li>
-                  <a class="dropdown-item" href="#">Web Design</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Web Development</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Graphic Design</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar end -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
 
     <!-- Header start -->
-    <header>
-      <div id="headertop" class="call_ot_action">
-        <div class="container">
-          <div class="row"></div>
-        </div>
-      </div>
-      <!-- Slider start -->
-      <div
-        id="mySlider"
-        class="carousel slider carousel-fade"
-        data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/slider1.png" class="w-100" alt="slider1" />
-            <div class="overlay"></div>
-            <div class="carousel-caption">
-              <h2>#Carousel Slider One</h2>
-              <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div>
-                <a href="" class="btn btn-danger">Hire Me</a>
-                <a href="" class="btn btn-primary">Contact Me</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/slider2.png" class="w-100" alt="slider2" />
-            <div class="overlay"></div>
-            <div class="carousel-caption">
-              <h2>#Carousel Slider Two</h2>
-              <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div>
-                <a href="" class="btn btn-danger">Hire Me</a>
-                <a href="" class="btn btn-primary">Contact Me</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/slider3.png" class="w-100" alt="slider3" />
-            <div class="overlay"></div>
-            <div class="carousel-caption">
-              <h2>#Carousel Slider Three</h2>
-              <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div>
-                <a href="" class="btn btn-danger">Hire Me</a>
-                <a href="" class="btn btn-primary">Contact Me</a>
-              </div>
-            </div>
-          </div>
+    <header class="sticky-top">
 
-          <button
-            type="button"
-            class="carousel-control-prev"
-            data-bs-slide="prev"
-            data-bs-target="#mySlider">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            type="button"
-            class="carousel-control-next"
-            data-bs-slide="next"
-            data-bs-target="#mySlider">
-            <span class="carousel-control-next-icon"></span>
-          </button>
+        <!-- Call To Action start -->
+        <div id="headerTop" class="call_ao_action bg-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="header_contact d-flex py-2 justify-content-center justify-content-md-start">
+                            <p class="m-0 me-3"><i class="fa-solid fa-phone-volume"></i> 0238568</p>
+                            <p class="m-0 me-3 d-none d-sm-block"><i class="fa-solid fa-envelope"></i> info@site.com</p>
+                            <p class="m-0"><i class="fa-solid fa-globe"></i> Portfolio.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header_social_media d-flex justify-content-center justify-content-md-end py-2">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Slider end -->
+        <!-- Call To Action end -->
+
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand-md bg-danger navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Portfolio</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-danger dropdown-menu-dark">
+                                <li>
+                                    <a class="dropdown-item" href="#">Web Design</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Web Developement</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Graphic Design</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Naver end -->
+
     </header>
     <!-- Header end -->
 
+
+    <!-- Layer Motion Slider start -->
+    
+    </svg>
+    <main>
+
+    <!-- Slider start -->
+    <div id="mySlider" class="carousel slider carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slider1.png" class="w-100" alt="slider1">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h2>#Carousel Slider One</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div>
+                        <a href="" class="btn btn-danger">Hire Me</a>
+                        <a href="" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider2.png" class="w-100" alt="slider2">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h2>#Carousel Slider Two</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div>
+                        <a href="" class="btn btn-danger">Hire Me</a>
+                        <a href="" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider3.png" class="w-100" alt="slider3">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h2>#Carousel Slider Three</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div>
+                        <a href="" class="btn btn-danger">Hire Me</a>
+                        <a href="" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#mySlider">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#mySlider">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <!-- Slider end -->
+
     <!-- About start -->
     <section id="about" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="images/about.jpg" class="w-100" alt="about" />
-          </div>
-          <div class="col-md-6">
-            <h5 class="ms-5 mb-3">About Me</h5>
-            <div class="line_left"></div>
-            <h2 class="mt-4">Learn About Me</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
-              perspiciatis et deserunt accusamus error officia.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel,
-              veniam a consectetur ad, libero sequi architecto maiores tenetur
-              voluptas nihil eius id hic porro ex voluptate soluta qui,
-              voluptatum laudantium?
-            </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/about.jpg" class="w-100" alt="about">
+                </div>
+                <div class="col-md-6">
+                    <h5 class="ms-5 mb-3">About Me</h5>
+                    <div class="line_left"></div>
+                    <h2 class="mt-4 ">Learn About Me</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem perspiciatis et deserunt accusamus error officia.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, veniam a consectetur ad, libero sequi architecto maiores tenetur voluptas nihil eius id hic porro ex voluptate soluta qui, voluptatum laudantium?</p>
 
-            <a href="#" class="btn btn-primary">Contact Me</a>
-          </div>
+                    <a href="#" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!-- About end -->
 
     <!-- Services start -->
     <section id="service" class="py-5 text-light">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2 class="text-center mb-4">Whice Services Offer My Clients</h2>
-            <div class="line_center"></div>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center mb-4">Whice Services Offer My Clients</h2>
+                    <div class="line_center"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 col-lg-3">
+                    <div class="card overflow-hidden mb-4">
+                        <div class="card-header p-0">
+                            <img src="images/about.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5>Web Design</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, blanditiis.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-danger btn-sm">Order Now</a>
+                                <a href="#" class="btn btn-primary btn-sm">Cart <i class="fa-solid fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card overflow-hidden mb-4">
+                        <div class="card-header p-0">
+                            <img src="images/about.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5>Web Developement</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, blanditiis.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-danger btn-sm">Order Now</a>
+                                <a href="#" class="btn btn-primary btn-sm">Cart <i class="fa-solid fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card overflow-hidden mb-4">
+                        <div class="card-header p-0">
+                            <img src="images/about.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5>Graphic Design</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, blanditiis.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-danger btn-sm">Order Now</a>
+                                <a href="#" class="btn btn-primary btn-sm">Cart <i class="fa-solid fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card overflow-hidden mb-4">
+                        <div class="card-header p-0">
+                            <img src="images/about.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5>Digital Marketing</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, blanditiis.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-danger btn-sm">Order Now</a>
+                                <a href="#" class="btn btn-primary btn-sm">Cart <i class="fa-solid fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-md-4 col-lg-3">
-            <div class="card overflow-hidden mb-4">
-              <div class="card-header p-0">
-                <img src="images/about.jpg" class="w-100" alt="" />
-              </div>
-              <div class="card-body">
-                <h5>Web Design</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dignissimos, blanditiis.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="d-flex justify-content-between">
-                  <a href="#" class="btn btn-danger btn-sm">Order Now</a>
-                  <a href="#" class="btn btn-primary btn-sm"
-                    >Cart <i class="fa-solid fa-shopping-cart"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <div class="card overflow-hidden mb-4">
-              <div class="card-header p-0">
-                <img src="images/about.jpg" class="w-100" alt="" />
-              </div>
-              <div class="card-body">
-                <h5>Web Developement</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dignissimos, blanditiis.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="d-flex justify-content-between">
-                  <a href="#" class="btn btn-danger btn-sm">Order Now</a>
-                  <a href="#" class="btn btn-primary btn-sm"
-                    >Cart <i class="fa-solid fa-shopping-cart"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <div class="card overflow-hidden mb-4">
-              <div class="card-header p-0">
-                <img src="images/about.jpg" class="w-100" alt="" />
-              </div>
-              <div class="card-body">
-                <h5>Graphic Design</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dignissimos, blanditiis.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="d-flex justify-content-between">
-                  <a href="#" class="btn btn-danger btn-sm">Order Now</a>
-                  <a href="#" class="btn btn-primary btn-sm"
-                    >Cart <i class="fa-solid fa-shopping-cart"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <div class="card overflow-hidden mb-4">
-              <div class="card-header p-0">
-                <img src="images/about.jpg" class="w-100" alt="" />
-              </div>
-              <div class="card-body">
-                <h5>Digital Marketing</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dignissimos, blanditiis.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="d-flex justify-content-between">
-                  <a href="#" class="btn btn-danger btn-sm">Order Now</a>
-                  <a href="#" class="btn btn-primary btn-sm"
-                    >Cart <i class="fa-solid fa-shopping-cart"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <!-- Services end -->
+    <!-- Services end -->    
 
     <!-- My Skills start -->
     <div id="mySkills" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h6 class="mb-4 ms-5">My Skills</h6>
-            <div class="line_left"></div>
-            <h2 class="mt-3">Learn about my Skills</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="mb-4 ms-5">My Skills</h6>
+                    <div class="line_left"></div>
+                    <h2 class="mt-3">Learn about my Skills</h2>
 
-            <div class="html mb-3">
-              <div class="d-flex justify-content-between">
-                <h6 class="mb-0">HTML</h6>
-                <span>67%</span>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped bg-primary"
-                  style="width: 67%"></div>
-              </div>
+                    <div class="html mb-3">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="mb-0">HTML</h6>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-primary" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="css mb-3">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="mb-0">CSS</h6>
+                            <span>87%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-primary" style="width: 87%;"></div>
+                        </div>
+                    </div>
+                    <div class="bootstrap mb-3">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="mb-0">Bootstrap</h6>
+                            <span>97%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-primary" style="width: 97%;"></div>
+                        </div>
+                    </div>
+                    <div class="javascript mb-3">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="mb-0">JavaScript</h6>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-primary" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <img src="images/about.jpg" class="w-100" alt="about">
+                </div>
             </div>
-            <div class="css mb-3">
-              <div class="d-flex justify-content-between">
-                <h6 class="mb-0">CSS</h6>
-                <span>16%</span>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped bg-primary"
-                  style="width: 16%"></div>
-              </div>
-            </div>
-            <div class="bootstrap mb-3">
-              <div class="d-flex justify-content-between">
-                <h6 class="mb-0">Bootstrap</h6>
-                <span>81%</span>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped bg-primary"
-                  style="width: 81%"></div>
-              </div>
-            </div>
-            <div class="javascript mb-3">
-              <div class="d-flex justify-content-between">
-                <h6 class="mb-0">JavaScript</h6>
-                <span>80%</span>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped bg-primary"
-                  style="width: 80%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <img src="images/about.jpg" class="w-100" alt="about" />
-          </div>
         </div>
-      </div>
     </div>
-    <!-- My Skills end -->
+    <!-- My Skills end --> 
 
     <!-- Portfolio start -->
     <div id="portFolio" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h6 class="mb-4">Portfolios</h6>
-            <div class="line_center"></div>
-            <h2 class="mt-3 mb-4">Here Are My Excellent Portfolio</h2>
-          </div>
-        </div>
-        <div class="row mb-4">
-          <div class="col">
-            <div class="filter_nav float-end">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-danger" data-filter>
-                  All
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-danger"
-                  data-filter="web">
-                  Web Developement
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-danger"
-                  data-filter="dm">
-                  Graphic Design
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-danger"
-                  data-filter="graphic">
-                  Digital Marketing
-                </button>
-              </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h6 class="mb-4">Portfolios</h6>
+                    <div class="line_center"></div>
+                    <h2 class="mt-3 mb-4">Here Are My Excellent Portfolio</h2>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-3" data-tags="web">
-            <div class="card overflow-hidden">
-              <div class="card-body p-0">
-                <img src="images/e_commerce.jpg" class="w-100" alt="slider1" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title text-center">Ecommerce Website</h5>
-              </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="filter_nav float-end">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger" data-filter>All</button>
+                            <button type="button" class="btn btn-sm btn-danger"data-filter="web">Web Developement</button>
+                            <button type="button" class="btn btn-sm btn-danger"data-filter="dm">Graphic Design</button>
+                            <button type="button" class="btn btn-sm btn-danger"data-filter="graphic">Digital Marketing</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3" data-tags="web">
-            <div class="card overflow-hidden">
-              <div class="card-body p-0">
-                <img src="images/slider2.png" class="w-100" alt="slider1" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title text-center">Portfolio Website</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3" data-tags="web">
-            <div class="card overflow-hidden">
-              <div class="card-body p-0">
-                <img src="images/Real_Estate.jpg" class="w-100" alt="slider1" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title text-center">Real Estate Website</h5>
-              </div>
-            </div>
-          </div>
+            <div class="row">
+                <div class="col-md-4 mb-3" data-tags="web">
+                    <div class="card overflow-hidden">
+                        <div class="card-body p-0">
+                            <img src="images/slider1.png" class="w-100" alt="slider1">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">Ecommerce Website</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-tags="web">
+                    <div class="card overflow-hidden">
+                        <div class="card-body p-0">
+                            <img src="images/slider2.png" class="w-100" alt="slider1">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">Portfolio Website</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-tags="web">
+                    <div class="card overflow-hidden">
+                        <div class="card-body p-0">
+                            <img src="images/slider3.png" class="w-100" alt="slider1">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">Real Estate Website</h5>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Graphic Design -->
-          <div class="col-md-4 mb-3" data-tags="dm">
-            <div class="card overflow-hidden">
-              <div class="card-body p-0">
-                <img src="images/logo.jpg" class="w-100" alt="slider1" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title text-center">Logo Design</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3" data-tags="dm">
-            <div class="card overflow-hidden">
-              <div class="card-body p-0">
-                <img src="images/slider2.png" class="w-100" alt="slider1" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title text-center">Brochure Design</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3" data-tags="dm">
-            <div class="card overflow-hidden">
-              <div class="card-body p-0">
-                <img src="images/slider3.png" class="w-100" alt="slider1" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title text-center">Brand Identity Design</h5>
-              </div>
-            </div>
-          </div>
+                <!-- Graphic Design -->
+                <div class="col-md-4 mb-3" data-tags="dm">
+                    <div class="card overflow-hidden">
+                        <div class="card-body p-0">
+                            <img src="images/slider1.png" class="w-100" alt="slider1">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">Logo Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-tags="dm">
+                    <div class="card overflow-hidden">
+                        <div class="card-body p-0">
+                            <img src="images/slider2.png" class="w-100" alt="slider1">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">Brochure Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-tags="dm">
+                    <div class="card overflow-hidden">
+                        <div class="card-body p-0">
+                            <img src="images/slider3.png" class="w-100" alt="slider1">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">Brand Identity Design</h5>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Digital Marketing -->
+                <!-- Digital Marketing -->
 
-          <div class="col-md-4 mb-3" data-tags="graphic">
-            <div class="card overflow-hidden">
-              <div class="card-body p-0">
-                <img src="images/slider1.png" class="w-100" alt="slider1" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title text-center">Post Advertizement</h5>
-              </div>
+                <div class="col-md-4 mb-3" data-tags="graphic">
+                    <div class="card overflow-hidden">
+                        <div class="card-body p-0">
+                            <img src="images/slider1.png" class="w-100" alt="slider1">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">Post Advertizement</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-tags="graphic">
+                    <div class="card overflow-hidden">
+                        <div class="card-body p-0">
+                            <img src="images/slider2.png" class="w-100" alt="slider1">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">Search Engine Optimization</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3" data-tags="graphic">
+                    <div class="card overflow-hidden">
+                        <div class="card-body p-0">
+                            <img src="images/slider3.png" class="w-100" alt="slider1">
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">Keyword Research</h5>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-          <div class="col-md-4 mb-3" data-tags="graphic">
-            <div class="card overflow-hidden">
-              <div class="card-body p-0">
-                <img src="images/slider2.png" class="w-100" alt="slider1" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title text-center">
-                  Search Engine Optimization
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3" data-tags="graphic">
-            <div class="card overflow-hidden">
-              <div class="card-body p-0">
-                <img src="images/slider3.png" class="w-100" alt="slider1" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title text-center">Keyword Research</h5>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <!-- Portfolio end -->
-    <!-- tastimonial start  -->
-    <!-- tastimonial  -->
+    <!-- Portfolio end --> 
 
-    <!-- Team Menber start -->
-    <section id="teammember" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h6 class="mb-4">Here Are My Team Member</h6>
-          </div>
+    <!-- Testimonial start --> 
+    <div id="testimonial" class="py-5 text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h6 class="text-center mb-4">Testimonial</h6>
+                    <div class="line_center"></div>
+                    <h2 class="text-center mt-2 mb-5">May client said about me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="slider client">
+                        <div>
+                            <div class="testimonial_inner">
+                                <div class="client_image">
+                                    <img src="images/clinet.jpg" class="w-100" alt="about">
+                                </div>
+                                <h5>Rony</h5>
+                                <p>Fiverr Client</p>
+                                <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae tempore officiis, iste similique officia?</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial_inner">
+                                <div class="client_image">
+                                    <img src="images/clinet.jpg" class="w-100" alt="about">
+                                </div>
+                                <h5>Sumit</h5>
+                                <p>Upwork Client</p>
+                                <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae tempore officiis, iste similique officia?</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="testimonial_inner">
+                                <div class="client_image">
+                                    <img src="images/clinet.jpg" class="w-100" alt="about">
+                                </div>
+                                <h5>Tony</h5>
+                                <p>Freeluncer Client</p>
+                                <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae tempore officiis, iste similique officia?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+    <!-- Testimonial end --> 
 
-    <!-- team menber  -->
+    <!-- My Team Member start -->
+     <section id="teamMember" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h6 class="mb-4">Team Members</h6>
+                    <div class="line_center"></div>
+                    <h2 class="my-4">Here Are My Dynamic Team Members</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card overflow-hidden">
+                        <div class="card-header p-0">
+                            <img src="images/clinet.jpg" alt="Photo" class="w-100">
+                        </div>
+                        <div class="card-body py-2">
+                            <div class="text-center">
+                                <h5 class="card-title">Jhon Dow</h5>
+                                <span>Executive</span>
+                            </div>
+                            <div class="personal_social_media">
+                                <div class="personal_social_media_item">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card overflow-hidden">
+                        <div class="card-header p-0">
+                            <img src="images/clinet.jpg" alt="Photo" class="w-100">
+                        </div>
+                        <div class="card-body py-2">
+                            <div class="text-center">
+                                <h5 class="card-title">Jhon Dow</h5>
+                                <span>Executive</span>
+                            </div>
+                            <div class="personal_social_media">
+                                <div class="personal_social_media_item">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card overflow-hidden">
+                        <div class="card-header p-0">
+                            <img src="images/clinet.jpg" alt="Photo" class="w-100">
+                        </div>
+                        <div class="card-body py-2">
+                            <div class="text-center">
+                                <h5 class="card-title">Jhon Dow</h5>
+                                <span>Executive</span>
+                            </div>
+                            <div class="personal_social_media">
+                                <div class="personal_social_media_item">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card overflow-hidden">
+                        <div class="card-header p-0">
+                            <img src="images/clinet.jpg" alt="Photo" class="w-100">
+                        </div>
+                        <div class="card-body py-2">
+                            <div class="text-center">
+                                <h5 class="card-title">Jhon Dow</h5>
+                                <span>Executive</span>
+                            </div>
+                            <div class="personal_social_media">
+                                <div class="personal_social_media_item">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- My Team Member end -->
+    </main>
 
     <!-- Footer start -->
     <footer class="bg-danger py-5 text-light">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3 class="text-center">Azmat</h3>
-            <hr>
-            <p>
-              &copy; copyright | All right reserved by BCC
-              <span class="float-end"
-                >Developed by :
-                <a
-                  href="https://www.facebook.com/azmatullaha781"
-                  class="text-light"
-                  >Azmat Ullah</a
-                ></span
-              >
-            </p>
-          </div>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3 class="text-center">Azmat</h3>
+                    <hr>
+                    <p>&copy; copyright | All right reserved by BCC <span class="float-end">Developed by : <a href="#" class="text-light">Azmat</a></span></p>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
     <!-- Footer end -->
-
     <!-- Jquery Core -->
     <script src="js/jquery-3.7.1.min.js"></script>
 
@@ -527,7 +598,10 @@
     <!-- Auto Filter JS -->
     <script src="js/autofilter.js"></script>
 
+    
+
     <!-- Custom JS -->
     <script src="js/main.js"></script>
-  </body>
+
+</body>
 </html>
