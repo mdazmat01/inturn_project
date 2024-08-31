@@ -21,6 +21,20 @@
     background: #00000050;
 }
 
+/* \start{code} */
+
+@media (max-width: 767.98px) and (min-width: 332px) {
+    .carousel-caption {
+        top: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .carousel-caption {
+        top: 40%;
+    }
+}
+/* \end{code} */
+
 /* Line Left */
 .line_left {
     background: green;
